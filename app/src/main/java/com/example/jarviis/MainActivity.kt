@@ -145,6 +145,28 @@ var x=0
             Toast.makeText(this,"faceebookkkk",Toast.LENGTH_SHORT).show()
         }
 
+         //LINK
+
+        //google.com
+        if(googleid.text.toString()==repeattextview.text.toString())
+        {
+            val intent=Intent(this,webview::class.java)
+
+            val googlevar=googleid.text.toString()
+            intent.putExtra("webVariable",googlevar)
+            startActivity(intent)
+        }
+        //flipkart.com
+        if(flipkartid.text.toString()==repeattextview.text.toString())
+        {
+            val intent=Intent(this,webview::class.java)
+
+            val flipvar=flipkartid.text.toString()
+            intent.putExtra("webVariable",flipvar)
+            startActivity(intent)
+        }
+
+
 
 
 
